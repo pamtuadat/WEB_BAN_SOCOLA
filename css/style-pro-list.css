@@ -1,14 +1,132 @@
-
-.content img{
-    height: 150px;
-    width: 7.5rem;
-    margin-left: 20px;
-    margin-top: 20px;
-    border: 2px solid gray;
-    padding: 5px;
-    border-radius: 5px;
+/* Mặc định: Hiển thị dạng lưới (4 sản phẩm trên 1 hàng) */
+#productContainer.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Khoảng cách giữa các card */
 }
-.content img:hover{
-    transform: translate(50px, 50px) scale(1.2) rotate(30deg);
-    transition: transform 0.5s ease-in-out;
+
+#productContainer.grid-view .product-item {
+    flex: 1 1 calc(25% - 15px); /* Chia thành 4 cột, trừ khoảng cách */
+    max-width: calc(25% - 15px);
+}
+
+/* Khi chuyển sang danh sách */
+#productContainer.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+#productContainer.list-view .product-item {
+    width: 100%; /* Chiếm toàn bộ chiều ngang */
+}
+
+/* Style nút bấm */
+.btn-toggle {
+    border: none;
+    background: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.btn-toggle.active i {
+    color: black;
+}
+
+.btn-toggle i {
+    color: gray;
+}
+
+/* Đảm bảo hiển thị tốt trên màn hình nhỏ */
+@media (max-width: 768px) {
+    #productContainer.grid-view .product-item {
+        flex: 1 1 calc(50% - 15px); /* Chia thành 2 cột trên màn nhỏ */
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    #productContainer.grid-view .product-item {
+        flex: 1 1 100%; /* 1 cột trên màn rất nhỏ */
+        max-width: 100%;
+    }
+}
+.btn-toggle:hover{
+    background-color: beige;
+    height: 40px;
+    width: 30px;
+    border-radius: 10px;
+
+}
+/* Dạng lưới: 4 sản phẩm trên 1 hàng */
+#productContainer.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productContainer.grid-view .product-item {
+    width: 25%; /* 4 cột */
+}
+
+/* Dạng danh sách */
+#productContainer.list-view {
+    display: block;
+}
+
+#productContainer.list-view .product-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ddd; /* Thêm đường kẻ ngăn cách */
+}
+
+#productContainer.list-view .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border: none;
+    margin-bottom: 20px;
+}
+#productContainer.list-view .card-header{
+    flex: 0.5;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    background-color: white;
+    text-align: end;
+    border: none;
+}
+#productContainer.list-view .card-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#productContainer.list-view .card-body {
+    flex: 1;
+    padding-left: 20px; /* Đẩy nội dung cách ảnh */
+}
+
+/* Ảnh sản phẩm trong danh sách */
+#productContainer.list-view .card img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+.card-header{
+    height: 330px;
+}
+.card-body span{
+    color: red;
+    margin-top: 20px;
+}
+
+.card-body .btn-product{
+    background: #654321;
+    border-radius: 40px;
+    width: 200px;
+    margin-top: 20px;
+    color: white;
+    border: none;
 }
