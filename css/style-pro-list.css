@@ -1,0 +1,14 @@
+
+.content img{
+    height: 150px;
+    width: 7.5rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+.content img:hover{
+    transform: translate(50px, 50px) scale(1.2) rotate(30deg);
+    transition: transform 0.5s ease-in-out;
+}

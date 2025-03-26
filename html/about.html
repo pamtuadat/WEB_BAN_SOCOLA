@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về web</title>
+    <link rel="icon" type="image/png" href="../img/logo/logo.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <style>
+        .card{
+            width: 300px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body style="background: rgb(211, 211, 211);">
+    <header class="bg-dark header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+                <a href="../html/home.html" class="navbar-brand">
+                    <img src="../img/logo/logo.jpg" alt="logo" width="100px" height="100px" style="border-radius: 20px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item"><a href="../html/home.html" class="nav-link">TRANG CHỦ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">DANH MỤC SẢN PHẨM</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">SOCOLA ĐEN</a>
+                                <a href="#" class="dropdown-item">SOCOLA TRẮNG</a>
+                                <a href="#" class="dropdown-item">SOCOLA SỮA</a>
+                                <a href="#" class="dropdown-item">CÁC LOẠI BÁNH KẸO KHÁC</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="../html/home.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">KHUYẾN MÃI</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">SOCOLA ĐEN</a>
+                                <a href="#" class="dropdown-item">SOCOLA TRẮNG</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="../html/about.html" class="nav-link">GIỚI THIỆU</a></li>
+                        <li class="nav-item"><a href="../html/about.html" class="nav-link">LIÊN HỆ</a></li>
+                    </ul>
+                    <ul class="navbar-nav icon d-flex align-items-center justify-content-end">
+                        <li class="nav-item input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                            <button class="btn btn-light"><i class="fas fa-search"></i></button>
+                        </li>
+                        <li class="nav-item d-flex align-items-center gap-2">
+                            <i class="fas fa-shopping-cart text-white"></i>
+                            <a href="#" class="nav-link text-white">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><i class="fas fa-user-alt text-white"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="../html/log-in.html" class="dropdown-item">Đăng nhập</a>
+                                <a href="../html/sign-up.html" class="dropdown-item">Đăng ký</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container"
+            style="width: 60%;
+                    height: 100%;
+                   background-color: white;">
+            <h1 style="text-align: center; color: orange; padding-top: 40px;">Gới thiệu về website Shocolate</h1>
+            <ol style="list-style-type: none;">
+                <li>
+                    <h3>1. Giới thiệu về đề tài</h3>
+                    <p style="text-indent: 20px;">Website này là bài tập lớn môn Hệ thống và Công nghệ Web của IUH năm 2023 với chủ đề 
+                        "Website giới thiệu, bán sôcôla/bánh kẹo trực tuyến".</p>
+                    <p style="text-indent: 20px;"> Nhóm mình đã dựa trên các website bán sôcôla nổi tiếng để tạo ra một phiên bản thu nhỏ.</p>
+
+                    <p style="text-indent: 20px;">    Website bán sôcôla/bánh kẹo là nơi bạn có thể tìm thấy những sản phẩm chất lượng, 
+                        phong phú về mẫu mã và hương vị, mang đến trải nghiệm ngọt ngào nhất cho khách hàng.</p>
+                </li>
+                <li>
+                    <h3>2. Tinh năng</h3>
+                    <p>Website bán thời trang nam có các tính năng sau: </p>
+                    <ul>
+                        <li>
+                            <p>Đăng ký: Bạn có thể đăng ký tài khoản để đăng nhập vào website. 
+                                Bạn chỉ cần nhập tên, số điện thoại, tài khoản và mật khẩu để đăng ký.</p>
+                        </li>
+                        <li>
+                            <p>Đăng nhập: Bạn có thể đăng nhập vào tài khoản của bạn để xem giỏ hàng, sửa đổi hàng trong giỏ</p>
+                        </li>
+                        <li>
+                            <p>
+                                
+                        Tìm kiếm: Bạn có thể tìm kiếm sản phẩm theo tên phẩm hoặc từ khóa liên quan. 
+                        Bạn cũng có thể sử dụng trang tìm kiếm nâng cao để lọc sản phẩm theo giá, màu sắc, kích cỡ, loại sản phẩm và thương hiệu.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lọc sản phẩm: Bạn có thể lọc sản phẩm theo các tiêu chí như theo tên, 
+                                giá thấp đến cao, giá cao đến thấp, theo kích cỡ, theo loại sản phẩm.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Giỏ hàng: Bạn có thể xem giỏ hàng của bạn bằng cách đăng nhập và nhấn vào 
+                                biểu tượng giỏ hàng ở góc trên bên phải của website. 
+                                Bạn có thể xem chi tiết sản phẩm, số lượng, giá và tổng tiền của đơn hàng. 
+                                Bạn cũng có thể xóa sản phẩm khỏi giỏ hàng.
+                            </p>
+                        </li>
+                    </ul>
+                        
+                    <p>   Vì đề tài không cho phép sử dụng database, nên 1 số thông tin như giỏ hàng, 
+                        tài khoản vừa đăng ký đều được lưu ở Local Storage (Lưu vào trình duyệt của người dùng) 
+                        để có thể mô phỏng lại các chức năng chân thật nhất.
+                    </p> 
+                    <p>   Để tránh phải viết lại nhiều trang website dữ liệu của các sản phẩm được 
+                        bọn mình mô hình hóa dưới dạng json và lưu vào thư mục data, sau đó sử dụng 
+                        js để render ra các trang dựa trên nội dung đọc từ file json bằng lệnh fetch và các sử lí bất đồng bộ.</p>
+                </li>
+                <li>
+                    <h3>3. Đội ngũ nhân viên</h3>
+                    <p>Nhóm thực hiện bao gồm 2 thành viên:</p>
+                    <ul class="nav text-start">
+                        <li class="nav-item">
+                            <div class="card">
+                                <img src="" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title
+                                    ">Phạm Tuấn Đạt</h5>
+                                    <p class="card-text">MSSV: 23706451</p> 
+                                </div>
+                                <div class="card-footer text-center" style="border: none;">
+                                    <a href="https://www.facebook.com/" class="btn btn-primary fa">
+                                        <i class="fab fa-facebook" style="font-size: 24px; color: blue;"></i>Facebook</a>
+                                    <a href="https://github.com/" class="btn btn-dark" style="margin-left: 20px;">
+                                        <i class="fab fa-github" style="font-size: 24px; color: black;"></i>Github
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item pb-4">
+                            <div class="card">
+                                <img src="" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title
+                                    ">Lưu Nguyễn Hoàng Anh</h5>
+                                    <p class="card-text">MSSV: 23706451</p> 
+                                </div>
+                                <div class="card-footer text-center" style="border: none;">
+                                    <a href="https://www.facebook.com/" class="btn btn-primary fa">
+                                        <i class="fab fa-facebook" style="font-size: 24px; color: blue;"></i>Facebook</a>
+                                    <a href="https://github.com/" class="btn btn-dark" style="margin-left: 20px;">
+                                        <i class="fab fa-github" style="font-size: 24px; color: black;"></i>Github
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer border-top pt-4 g-0">
+        <div class="row pt-3">
+            <div class="col-3 g-0">
+                <span>Bài tập lớn môn hệ thống công nghệ web IUH.<br>Đề tài: Website bán sôcôla/ bánh kẹo. <br></span> 
+                <span>Thành viên thực hiện:</span>
+                <ul>
+                    <li>Phạm Tuấn Đạt 23706451</li>
+                    <li>Lưu Nguyễn Hoàng Anh 23344409</li>
+                </ul>
+            </div>
+            <div class="col-2 g-0">
+                <h5 style="font-style: inherit;">SHOCOLATE</h5>
+                <ul class="nav d-flex flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tuyển dụng</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tin tức</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Hệ thống cửa hàng</a></li>
+                </ul>
+            </div>
+            <div class="col-3 g-0">
+                <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                <ul class="nav d-flex flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Chính sách đổi/trả</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Thanh toán, giao nhận</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Chính sách bảo mật thông tin khách hàng</a></li>
+                </ul>
+            </div>
+            <div class="col-4 g-0">
+                <h5>CỬA HÀNG BÁNH KẸO SHOCOLATE</h5>
+                <span>Địa chỉ: Gò vấp- thành phố Hồ Chí Minh <br></span>
+                <span>Email: cskh@shocolate.vn</span>
+            </div>
+        </div>
+        <div class="row text-center border-top pt-3">
+            <span>@ Bản quyền thuộc về Shocolate.vn All right reserved</span>
+        </div>
+    </footer>
+    
+</body>
+</html>
