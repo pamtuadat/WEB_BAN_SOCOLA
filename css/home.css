@@ -78,3 +78,10 @@
 .carousel-item.d-flex {
     flex-wrap: wrap; /* Ngăn các card bị chồng lên nhau */
 }
+
+.product .carousel.slide .carousel-item.d-flex .card{
+    margin-left: 40px;
+}
+.row.mt-4 .carousel.slide.text-center .carousel-item.d-flex .card{
+    margin-left: 20px;
+}

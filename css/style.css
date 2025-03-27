@@ -1,4 +1,4 @@
-*{
+[class* col-]{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,12 +6,13 @@
 /* header */
 body {
     padding-top: 100px;
+    overflow-x: hidden;
 }
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #343a40;
     z-index: 1000;
 
@@ -33,15 +34,24 @@ body {
 .header .icon .nav-item {
     margin-left: 20px;
 }
-
+.row {
+    margin: 0;
+    padding: 0;
+}
+.body{
+    flex-wrap: wrap;
+    max-width: 100%;
+}
 /* foooter */
 .footer{
-    height: 300px;
+    height: 320px;
+    max-width: 100%;;
     background-color: #11006f;
     color: white;
     padding-left: 20px;
-    padding-right: 10px;
     text-align: left;
+    flex-wrap: wrap;
+
 }
 .footer .row .col-2 .nav .nav-item .nav-link,
 .footer .row .col-3 .nav .nav-item .nav-link{
@@ -51,3 +61,6 @@ body {
 .footer .row .col-3 .nav .nav-item .nav-link:hover {
     color: black;
 }
+/* * {
+    outline: 2px solid red !important;
+} */

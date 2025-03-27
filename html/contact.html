@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="icon" type="image/png" href="../img/logo/logo.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <style>
+        .card{
+            width: 300px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body style="background: rgb(211, 211, 211);">
+    <header class="bg-dark header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+                    <a href="../html/home.html" class="navbar-brand">
+                        <img src="../img/logo/logo.jpg" alt="logo" width="100px" height="100px" style="border-radius: 20px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav menu">
+                            <li class="nav-item"><a href="../html/home.html" class="nav-link">TRANG CHỦ</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">DANH MỤC SẢN PHẨM</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">SOCOLA ĐEN</a>
+                                    <a href="#" class="dropdown-item">SOCOLA TRẮNG</a>
+                                    <a href="#" class="dropdown-item">SOCOLA SỮA</a>
+                                    <a href="#" class="dropdown-item">CÁC LOẠI BÁNH KẸO KHÁC</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="../html/home.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">KHUYẾN MÃI</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">SOCOLA ĐEN</a>
+                                    <a href="#" class="dropdown-item">SOCOLA TRẮNG</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="../html/about.html" class="nav-link">GIỚI THIỆU</a></li>
+                            <li class="nav-item"><a href="../html/contact.html" class="nav-link">LIÊN HỆ</a></li>
+                        </ul>
+                        <ul class="navbar-nav icon d-flex align-items-center justify-content-end">
+                            <li class="nav-item input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                <button class="btn btn-light"><i class="fas fa-search"></i></button>
+                            </li>
+                            <li class="nav-item d-flex align-items-center gap-2">
+                                <i class="fas fa-shopping-cart text-white"></i>
+                                <a href="#" class="nav-link text-white">Giỏ hàng</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown"><i class="fas fa-user-alt text-white"></i></a>
+                                <div class="dropdown-menu">
+                                    <a href="../html/log-in.html" class="dropdown-item">Đăng nhập</a>
+                                    <a href="../html/sign-up.html" class="dropdown-item">Đăng ký</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    </header>
+    
+    <section class="body">
+        <div class="container-fluid">
+            <div class="row g-0">
+                <img src="../img/logo/banner1.png" alt="banner" class="img-fluid" style="height: 500px;">
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 p-5 p-5">
+                    <h3>CÔNG TY THHH SHOCOLATE</h3>
+                    <label style="font-weight: bold; font-size: 25px; margin-top: 10px; margin-right: 10px;">Địa chỉ: </label>     <span style="font-size: 20px;">Gò Vấp- Thành Phố Hồ Chí Minh <br></span>
+                    <label style="font-weight: bold; font-size: 25px; margin-top: 10px; margin-right: 10px;">Phone: </label>       <span style="font-size: 20px;">0982.363.802 <br></span>
+                    <label style="font-weight: bold; font-size: 25px; margin-top: 10px; margin-right: 10px;">Email: </label>       <span style="font-size: 20px;">cskh@shocolate.vn <br></span>
+                    <label style="font-weight: bold; font-size: 25px; margin-top: 10px; margin-right: 10px;">Giờ làm việc: </label><span style="font-size: 20px;">Thứ 2 - Thứ 6: 8h-17h. Thứ 7: 8h-17h. Chủ nhật: OFF<br></span>
+                </div>
+                <div class="col-12 col-md-6 p-5 p-5 text-center">
+                    <h3>MẪU LIÊN HỆ</h3>
+                    <form id="contactForm">
+                        <input type="text" class="form-control mt-3" placeholder="Họ và tên:">
+                        <input type="email" class="form-control mt-3" placeholder="Email*">
+                        <input type="tel" class="form-control mt-3" placeholder="Điện thoại:">
+                        <input type="text" class="form-control mt-3" placeholder="Tiêu đề:">
+                        <textarea class="form-control mt-3" placeholder="Nội dung" style="height: 100px;"></textarea>
+            
+                        <button type="button" class="btn btn-warning mt-5 text-center w-100">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer border-top pt-4 g-0">
+            <div class="row pt-3">
+                <div class="col-4 g-0">
+                    <span>Bài tập lớn môn hệ thống công nghệ web IUH.<br>Đề tài: Website bán sôcôla/ bánh kẹo. <br></span> 
+                    <span>Thành viên thực hiện:</span>
+                    <ul>
+                        <li>Phạm Tuấn Đạt 23706451</li>
+                        <li>Lưu Nguyễn Hoàng Anh 23344409</li>
+                    </ul>
+                </div>
+                <div class="col-2 g-0">
+                    <h5 style="font-style: inherit;">SHOCOLATE</h5>
+                    <ul class="nav d-flex flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Tuyển dụng</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Tin tức</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Hệ thống cửa hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 g-0">
+                    <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                    <ul class="nav d-flex flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Chính sách đổi/trả</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Thanh toán, giao nhận</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 g-0">
+                    <h5>CỬA HÀNG BÁNH KẸO SHOCOLATE</h5>
+                    <span>Địa chỉ: Gò vấp- thành phố Hồ Chí Minh <br></span>
+                    <span>Email: cskh@shocolate.vn</span>
+                </div>
+            </div>
+            <div class="row text-center border-top pt-3">
+                <span>@ Bản quyền thuộc về Shocolate.vn All right reserved</span>
+            </div>
+    </footer>
+</body>
+</html>

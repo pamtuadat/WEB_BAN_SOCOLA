@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid #ddd; /* Thêm đường kẻ ngăn cách */
+    border-top: 1px solid #ddd; /* Thêm đường kẻ ngăn cách */
 }
 
 #productContainer.list-view .card {
