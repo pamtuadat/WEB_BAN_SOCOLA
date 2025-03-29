@@ -19,8 +19,8 @@
 <body onload="showProductByType('all')">
     <div id="header-container"></div>
     <section class="row">
-        <div class="left-sidebar col-lg-2" style="border-right: 1px solid black; padding-left: 50px;">
-            <ul class="nav">
+        <div class="left-sidebar col-lg-2">
+            <ul class="nav d-block">
                 <li class="nav-item"><button class="nav-link btn active" onclick="showProductByType('all')">TẤT CẢ</button></li>
                 <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('dark')">SOCOLA ĐEN</button></li>
                 <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('white')">SOCOLA TRẮNG</button></li>
@@ -30,7 +30,7 @@
         </div>
         <div class="all-products col-lg-10 p-4">
 
-            <div class="d-flex justify-content-center mb-3 pt-5">
+            <div class="d-flex justify-content-center mb-3 mt-3">
                 <button class="btn-toggle active pt" id="gridView" onclick="toggleView('grid')" >
                     <i class="bi bi-grid-fill" style="font-size: 24px; color: black;"></i>
                 </button>
@@ -38,7 +38,7 @@
                     <i class="bi bi-list" style="font-size: 24px; color: gray;"></i>
                 </button>
             </div>
-            <div class="row" id="productContainer">
+            <div class="row pr-3" id="productContainer">
                 <!-- <div class="col-md-3 col-sm-6 mb-3 product-item">
                     <div class="card">
                         <div class="card-header">

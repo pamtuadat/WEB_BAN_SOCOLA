@@ -62,9 +62,7 @@ body {
 .footer .row .col-3 .nav .nav-item .nav-link:hover {
     color: black;
 }
+
 /* * {
     outline: 2px solid red !important;
 } */
-section{
-    height: auto;
-}

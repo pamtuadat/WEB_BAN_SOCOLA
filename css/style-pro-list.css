@@ -1,13 +1,17 @@
+.row .left-sidebar{
+    border-right: 1px solid black;
+    width: 230px;
+}
 /* Mặc định: Hiển thị dạng lưới (4 sản phẩm trên 1 hàng) */
 #productContainer.grid-view {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Khoảng cách giữa các card */
+    gap: 10px; /* Khoảng cách giữa các card */
 }
 
 #productContainer.grid-view .product-item {
-    flex: 1 1 calc(25% - 15px); /* Chia thành 4 cột, trừ khoảng cách */
-    max-width: calc(25% - 15px);
+    flex: 1 1 calc(20% - 15px); /* Chia thành 4 cột, trừ khoảng cách */
+    max-width: calc(20% - 15px);
 }
 
 /* Khi chuyển sang danh sách */
