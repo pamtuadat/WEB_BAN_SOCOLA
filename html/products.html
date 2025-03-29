@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shocolate</title>
     <link rel="icon" type="image/png" href="../img/logo/logo.jpg">
-    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/style-pro-list.css">
@@ -16,30 +16,33 @@
     <script src="../js/product.js"></script>
 
 </head>
-<body>
-    <header id="header-container"></header>
-
+<body onload="showProductByType('all')">
+    <div id="header-container"></div>
     <section class="row">
         <div class="left-sidebar col-lg-2" style="border-right: 1px solid black; padding-left: 50px;">
-            <h4>SOCOLA</h4>
-            <h4>sndjnfjdnjf</h4>
-            <h4>dsjnfjnsdjifnd</h4>
+            <ul class="nav">
+                <li class="nav-item"><button class="nav-link btn active" onclick="showProductByType('all')">TẤT CẢ</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('dark')">SOCOLA ĐEN</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('white')">SOCOLA TRẮNG</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('box')">SOCOLA HỘP QUÀ</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('other')">CÁC LOẠI KHÁC</button></li>
+            </ul>
         </div>
         <div class="all-products col-lg-10 p-4">
 
             <div class="d-flex justify-content-center mb-3 pt-5">
-                <button class="btn-toggle active" id="gridView">
+                <button class="btn-toggle active pt" id="gridView" onclick="toggleView('grid')" >
                     <i class="bi bi-grid-fill" style="font-size: 24px; color: black;"></i>
                 </button>
-                <button class="btn-toggle" id="listView">
+                <button class="btn-toggle" id="listView"  onclick="toggleView('list')" >
                     <i class="bi bi-list" style="font-size: 24px; color: gray;"></i>
                 </button>
             </div>
             <div class="row" id="productContainer">
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
+                <!-- <div class="col-md-3 col-sm-6 mb-3 product-item">
                     <div class="card">
                         <div class="card-header">
-                            <img src="../img/product/dark-chocolates/sanpham1.jpg" alt="san-pham">
+                            <img src="../img/product/dark-chocolates/sp1.jpg" alt="san-pham">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">SOCOLA DEN</h5>
@@ -47,163 +50,11 @@
                             <button type="button" class="btn btn-product">THÊM VÀO GIỎ HÀNG</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="../img/product/dark-chocolates/sanpham1.jpg" alt="san-pham">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 2</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="../img/product/dark-chocolates/sanpham1.jpg" alt="san-pham">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 3</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="../img/product/dark-chocolates/sanpham1.jpg" alt="san-pham">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 4</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="../img/product/dark-chocolates/riesen.png" alt="san-pham">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 5</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="../img/product/dark-chocolates/snickers.jpg" alt="san-pham">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 6</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="../img/product/dark-chocolates/ejfarm.png" alt="san-pham">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 7</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 8</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 9</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 10</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 11</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 12</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 13</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 14</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 15</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 16</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 17</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 18</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 19</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sản phẩm 20</h5>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>    
-
-    <footer id="footer-container"></footer>
+    <div id="footer-container"></div>
     <!-- js -->
     <script src="../js/getLayout.js"></script>
     <script src="../js/product.js"></script>
