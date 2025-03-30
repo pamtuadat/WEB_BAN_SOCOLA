@@ -293,7 +293,7 @@ function showProductByType(type){
     // Lọc sản phẩm theo loại hoặc hiển thị tất cả
     const filteredProducts = type === "all" ? products : products.filter(p => p.type === type);
 
-    filteredProducts.forEach((product) => {
+    filteredProducts.forEach((product, index) => {
         const productHTML = `
             <div class="col-md-3 col-sm-6 mb-3 product-item">
                 <div class="card">
@@ -303,7 +303,7 @@ function showProductByType(type){
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <span>Giá: ${product.price} <br></span>
-                        <button type="button" class="btn btn-product">THÊM VÀO GIỎ HÀNG</button>
+                        <button type="button" class="btn btn-product" onclick="saveCustomerOfProducts('${product.id}')">THÊM VÀO GIỎ HÀNG</button>
                     </div>
                 </div>
             </div>
@@ -312,3 +312,21 @@ function showProductByType(type){
     });
 }
 
+
+function saveCustomerOfProducts(productId) {
+    const selectedProduct = products.find(p => p.id === productId);
+
+    if (!selectedProduct) return;
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let existingProduct = cart.find(item => item.id === selectedProduct.id);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({ ...selectedProduct, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("Đã thêm vào giỏ hàng!");
+}

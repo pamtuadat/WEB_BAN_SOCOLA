@@ -20,16 +20,28 @@
     <div id="header-container"></div>
     <section class="row">
         <div class="left-sidebar col-lg-2">
+            <!-- <div class="row">
+                <h5> <i class="fas fa-filter"></i>Sắp xếp theo</h5>
+                <select id="sort" class="form-control">
+                    <option value="default">Mặc định</option>
+                    <option value="increasePrice">Theo giá tăng</option>
+                    <option value="decreasePrice">Theo giá giảm</option>
+                </select>
+            </div> -->
+
             <ul class="nav d-block">
                 <li class="nav-item"><button class="nav-link btn active" onclick="showProductByType('all')">TẤT CẢ</button></li>
-                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('dark')">SOCOLA ĐEN</button></li>
-                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('white')">SOCOLA TRẮNG</button></li>
-                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('box')">SOCOLA HỘP QUÀ</button></li>
-                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('other')">CÁC LOẠI KHÁC</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('dark')" id="socola-den">SOCOLA ĐEN</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('white')" id="socola-trang">SOCOLA TRẮNG</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('box')" id="socola-box">SOCOLA HỘP QUÀ</button></li>
+                <li class="nav-item"><button class="nav-link btn" onclick="showProductByType('other')" id="sanpham-khac">CÁC LOẠI KHÁC</button></li>
             </ul>
+
         </div>
+
         <div class="all-products col-lg-10 p-4">
 
+            <!-- hien thi san pham theo dang luoi hay cot -->
             <div class="d-flex justify-content-center mb-3 mt-3">
                 <button class="btn-toggle active pt" id="gridView" onclick="toggleView('grid')" >
                     <i class="bi bi-grid-fill" style="font-size: 24px; color: black;"></i>
@@ -38,20 +50,9 @@
                     <i class="bi bi-list" style="font-size: 24px; color: gray;"></i>
                 </button>
             </div>
-            <div class="row pr-3" id="productContainer">
-                <!-- <div class="col-md-3 col-sm-6 mb-3 product-item">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="../img/product/dark-chocolates/sp1.jpg" alt="san-pham">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">SOCOLA DEN</h5>
-                            <span>Giá: 190,000 VNĐ <br></span>
-                            <button type="button" class="btn btn-product">THÊM VÀO GIỎ HÀNG</button>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
+
+            <!-- hien thi san pham -->
+            <div class="row pr-3" id="productContainer"></div>
         </div>
     </section>    
     <div id="footer-container"></div>
